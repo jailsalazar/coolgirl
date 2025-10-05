@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Typist className="title" avgTypingDelay={150} cursor={{hideWhenDone: true}}>
-            cool girl book club.
+            { "cool girl book club." }
         </Typist>
       </header>
     </div>
