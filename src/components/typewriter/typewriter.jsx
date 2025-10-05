@@ -8,7 +8,8 @@ export function useTypewriter(text, speed = 100) {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       if (indexRef.current < text.length) {
-        setTypedText((prev) => prev + text.charAt(indexRef.current));
+        const newChar = text.charAt(indexRef.current);
+        setTypedText((prev) => prev + newChar);
         indexRef.current++;
       } else {
         clearInterval(intervalRef.current);
